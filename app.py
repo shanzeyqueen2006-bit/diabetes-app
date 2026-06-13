@@ -272,12 +272,10 @@ st.markdown("""
 <div class="hero">
     <div class="hero-eyebrow">🧬 AI-Powered Medical Screening</div>
     <h1 class="hero-title">Predict Your<br><span class="accent">Diabetes Risk</span></h1>
-    <p class="hero-sub">
-        Clinical-grade AI analysis using 8 health biomarkers.
-        Get your personalized risk assessment in seconds.
-    </p>
-</div>
-
+    <p class="hero-sub" style="text-align:center !important; margin-left:auto !important; margin-right:auto !important; width:100% !important; max-width:480px !important;">
+    Clinical-grade AI analysis using 8 health biomarkers.
+    Get your personalized risk assessment in seconds.
+</p>
 <div class="stats-grid">
     <div class="stat-card"><span class="stat-num">97%</span><div class="stat-lbl">Accuracy</div></div>
     <div class="stat-card"><span class="stat-num">768</span><div class="stat-lbl">Samples</div></div>
