@@ -58,9 +58,17 @@ html, body, [class*="css"] {
 }
 .hero-title {
     font-family: 'Syne', sans-serif;
-    font-size: clamp(2.8rem, 6vw, 5rem);
+    font-size: clamp(2rem, 8vw, 5rem);
     font-weight: 800; line-height: 1.05;
     color: #fff; margin-bottom: 1.2rem; letter-spacing: -0.02em;
+    white-space: nowrap;
+}
+@media (max-width: 480px) {
+    .hero-title { font-size: clamp(1.6rem, 7vw, 2.5rem); white-space: normal; }
+    .hero { padding: 3rem 1rem 2rem; }
+    .hero-sub { font-size: 0.92rem; text-align: center !important; }
+    .stats-grid { grid-template-columns: repeat(2, 1fr) !important; max-width: 100% !important; }
+    .block-container { padding: 0 1rem 3rem !important; }
 }
 .hero-title .accent {
     background: linear-gradient(135deg, #00d4aa 0%, #3b82f6 50%, #8b5cf6 100%);
@@ -69,13 +77,14 @@ html, body, [class*="css"] {
 .hero-sub {
     color: #64748b; font-size: 1.05rem; max-width: 480px;
     margin: 0 auto 3rem; line-height: 1.75; font-weight: 300;
+    text-align: center !important;
 }
 
 /* ── STAT CARDS ── */
 .stats-grid {
     display: grid; grid-template-columns: repeat(4, 1fr);
     gap: 1rem; margin: 0 auto 4rem; max-width: 700px;
-    position: relative; z-index: 1;
+    position: relative; z-index: 1; width: 100%;
 }
 .stat-card {
     background: rgba(255,255,255,0.03);
